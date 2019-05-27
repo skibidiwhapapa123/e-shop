@@ -1,33 +1,30 @@
-.App {
-  text-align: center;
+:root {
+  --Blue: #080a52;
+  --White: #f3f3f3;
+  --Pink: #eb2188;
+  --Green: #006400;
+  --Purple: #3c1a5b;
+  --Yellow: #fff748;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+  background: var(--main White) !important;
+  color: var(--maindark) !important;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.text-title {
+  font-family: "Ranga", cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-pink {
+  color: var(--Pink);
+}
+.text-purple {
+  color: var(--Purple);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-cart-plus {
+  color: var(--Yellow);
 }
