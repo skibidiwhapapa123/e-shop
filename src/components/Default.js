@@ -4,7 +4,7 @@ class Default extends Component {
   render() {
     return (
       <div>
-        <h3>JAJAJAJA</h3>
+        <h3>Not found</h3>
       </div>
     );
   }

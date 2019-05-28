@@ -8,8 +8,7 @@
 }
 body {
   font-family: "Poppins", sans-serif !important;
-  background: var(--main White) !important;
-  color: var(--maindark) !important;
+  background: rgba(200, 200, 200, 0.4) !important;
 }
 
 .text-title {
