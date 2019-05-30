@@ -27,3 +27,6 @@ body {
 .fa-cart-plus {
   color: var(--Yellow);
 }
+.btn-pm {
+  border: 0.1rem solid black !important;
+}

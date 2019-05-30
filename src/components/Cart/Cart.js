@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Title from "../title";
 import CartColumns from "./CartColumns";
 import CartList from "./CartList";
-import CartTotals from "./CardTotals";
+import CartTotals from "./CartTotals";
 import { ProductConsumer } from "../../context";
 import EmptyCart from "./EmptyCart";
 export default class Store extends Component {
@@ -13,8 +13,6 @@ export default class Store extends Component {
           {value => {
             const { cart } = value;
             if (cart.length > 0) {
-              return <EmptyCart />;
-            } else {
               return (
                 <React.Fragment>
                   <Title name="Váš" title=" Košík" />
@@ -23,6 +21,8 @@ export default class Store extends Component {
                   <CartTotals value={value} history={this.props.history} />
                 </React.Fragment>
               );
+            } else {
+              return <EmptyCart />;
             }
           }}
         </ProductConsumer>

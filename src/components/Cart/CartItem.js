@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+//import ButtonContainer from "../Button";
 export default class CartItem extends Component {
   render() {
     const { id, title, img, price, total, count } = this.props.item;
@@ -11,15 +12,15 @@ export default class CartItem extends Component {
             src={img}
             style={{ width: "5rem", heigth: "5rem" }}
             className="img-fluid"
-            alt=""
+            alt="obrazek"
           />
         </div>
         <div className="col-10 mx-auto col-lg-2 ">
-          <span className="d-lg-none">product :</span> {title}
+          <span className="d-lg-none">Produkt:</span> {title}
         </div>
         <div className="col-10 mx-auto col-lg-2 ">
           <strong>
-            <span className="d-lg-none">price :</span> ${price}
+            <span className="d-lg-none">Cena :</span> {price}Kč
           </strong>
         </div>
         <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0 ">
@@ -33,7 +34,7 @@ export default class CartItem extends Component {
               >
                 -
               </span>
-              <span className="btn btn-black mx-1">{count}</span>
+              <span className="btn mx-1">{count}</span>
               <span
                 className="btn btn-black mx-1"
                 onClick={() => {
@@ -52,7 +53,7 @@ export default class CartItem extends Component {
         </div>
 
         <div className="col-10 mx-auto col-lg-2 ">
-          <strong>item total : ${total} </strong>
+          <strong>item total : {total}Kč </strong>
         </div>
       </div>
     );
