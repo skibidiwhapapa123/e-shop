@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import ButtonContainer from "../Button";
+
 export default class CartItem extends Component {
   render() {
     const { id, title, img, price, total, count } = this.props.item;
@@ -53,7 +53,7 @@ export default class CartItem extends Component {
         </div>
 
         <div className="col-10 mx-auto col-lg-2 ">
-          <strong>item total : {total}Kč </strong>
+          <strong>{total}Kč </strong>
         </div>
       </div>
     );

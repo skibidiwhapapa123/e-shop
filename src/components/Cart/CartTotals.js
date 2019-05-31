@@ -27,7 +27,7 @@ export default class CartTotals extends Component {
                       clearCart();
                     }}
                   >
-                    clear cart
+                    Smazat
                   </button>
                 </Link>
                 <h5>
